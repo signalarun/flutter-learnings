@@ -8,9 +8,9 @@ void main() {
           title: Text("My first App"),
         ),
 
-        body: Center(
-          child: Text("Hello World"),
-        )
+        body: Image(image: NetworkImage('http://theaposition.com/robertfagan/wp-content/uploads/sites/33/2012/04/happy.jpg')),
+
     ),
-  ));
+    ),
+  );
 }
