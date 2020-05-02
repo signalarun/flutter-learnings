@@ -26,13 +26,23 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
     return new MaterialApp(
         home: Scaffold(
-          backgroundColor: Colors.white70,
+          backgroundColor: Colors.lightBlue[50],
+
           appBar: AppBar(
             backgroundColor: Colors.purple,
             title: Text("My first App"),
           ),
 
-          body: Center(child: Image(image: NetworkImage('http://theaposition.com/robertfagan/wp-content/uploads/sites/33/2012/04/happy.jpg'))),
+
+          body: Container(
+            color: Colors.black12,
+             height: 200,
+              width: 260,
+              margin: EdgeInsets.fromLTRB(80, 40, 20, 0),
+              padding: EdgeInsets.all(20),
+              // A container can contain only single child
+              child: Image(image: NetworkImage('http://theaposition.com/robertfagan/wp-content/uploads/sites/33/2012/04/happy.jpg'))
+          )
 
         )
     );
