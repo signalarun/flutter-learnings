@@ -80,7 +80,7 @@ String getGreeting({bool mode=true, String name="World"}){
 
 
 /**
- * Demo of named parameter
+ * Demo of optional positional parameter
  */
 void showGreeting(bool mode, String name, [String? app]){
   if(app != null){
