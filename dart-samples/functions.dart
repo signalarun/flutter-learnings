@@ -16,6 +16,10 @@ void main() {
   double finalResult = step2Result/3;
   print(finalResult);
   
+  helloWorld();
+  print(getMorningGreeting());
+  print(getNightGreeting());
+  
 }
 
 void greetings1(String greetings, String name) {
@@ -36,4 +40,26 @@ int add({int n1, int n2}){
 
 int multiply(int a, int b){
  return a*b;
+}
+
+/*
+ * Function without a return type
+ */
+void helloWorld(){
+  print("Hello World");
+}
+
+/*
+ * Function with a return type
+ */
+String getMorningGreeting(){
+  return "Hello World, Good moring";
+}
+
+
+/*
+ * Function without a return type
+ */
+getNightGreeting(){
+  return "Hello World, Good night";
 }
