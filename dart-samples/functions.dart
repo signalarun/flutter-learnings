@@ -4,7 +4,7 @@ void main() {
   greetings1("How are you ", "Gopi");
   greetings2(
     greetings: 'how are you ',
-    name: 'Arun',
+    name: 'Ra',
   );
   
   print(getGreeting());
@@ -19,6 +19,8 @@ void main() {
   helloWorld();
   print(getMorningGreeting());
   print(getNightGreeting());
+  print(getGreeting(mode:false, name:"Ra"));
+  showGreeting(false,"Ra", "App");
   
 }
 
@@ -58,8 +60,35 @@ String getMorningGreeting(){
 
 
 /*
- * Function without a return type
+ * Function with a return type
  */
 getNightGreeting(){
   return "Hello World, Good night";
+}
+
+/**
+ * Demo of named parameter
+ */
+String getGreeting({bool mode=true, String name="World"}){
+  
+  if(mode){
+   return  "Hello ${name}, Good night";
+  }else{
+    return  "Hello ${name}, Good morning";
+  }
+}
+
+
+/**
+ * Demo of named parameter
+ */
+void showGreeting(bool mode, String name, [String? app]){
+  if(app != null){
+     print("From ${app}:");
+  }
+  if(mode){
+   print("Hello ${name}, Good night");
+  }else{
+     print("Hello ${name}, Good morning");
+  }
 }
