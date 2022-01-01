@@ -1,4 +1,4 @@
-
+import 'dart:collection'; 
 void main() {
   // Grawable list    
   List cart1 = new List();
@@ -41,5 +41,18 @@ void main() {
   Map<String, String> credential = {"name" : "Ra", "password" : "password\$123"};
   print("Credential");
   credential.forEach((key, value) => print("$key - $value"));
+  
+  // Demo of Queue
+  Queue<int> queue = Queue();
+  queue.add(1);
+  queue.add(34);
+  queue.add(32);
+  queue.add(190);
+  
+  print(queue.removeFirst());
+  print("Tokens") ;
+  for(var token in queue){
+    print(token);
+  }
 
 }
