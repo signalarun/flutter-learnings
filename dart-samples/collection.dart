@@ -31,4 +31,15 @@ void main() {
   print("Colors:");  
   color.forEach((item)=> print("${item}"));
   
+  // Demo of Map
+  Map<String, String> address = Map();
+  address["name"] = "Ra";
+  address["country"] = "Egypt";
+  print("Address");
+  address.forEach((key, value) => print("$key - $value"));
+  
+  Map<String, String> credential = {"name" : "Ra", "password" : "password\$123"};
+  print("Credential");
+  credential.forEach((key, value) => print("$key - $value"));
+
 }
